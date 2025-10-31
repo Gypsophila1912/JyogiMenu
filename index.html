@@ -11,40 +11,31 @@
       background-color: #0a3d7a;
       color: white;
       font-family: "Helvetica Neue", "Arial", sans-serif;
-      min-height: 100vh;
+      height: 100%;
+      overflow: hidden;
     }
     .container {
       width: 100%;
-      max-width: 480px;
-      margin: 0 auto;
-      padding: 32px 16px 16px 16px;
-      text-align: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
       box-sizing: border-box;
     }
     img {
-      width: 100%;
+      max-width: 100%;
+      max-height: 100vh;
+      width: auto;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
-      transition: transform 0.3s ease;
+      object-fit: contain;
       display: block;
-    }
-    img:hover {
-      transform: scale(1.02);
-    }
-    footer {
-      margin-top: 12px;
-      font-size: 0.8rem;
-      opacity: 0.8;
-      text-align: center;
-      padding-bottom: 16px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="jyogi_menu.png" alt="2025立花祭じょぎメニュー表">
-    <footer>© 2025 立花祭じょぎメニュー表</footer>
   </div>
 </body>
 </html>
